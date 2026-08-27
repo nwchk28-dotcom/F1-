@@ -1,0 +1,131 @@
+/* Keep the editorial scale while making metadata and body copy comfortably legible. */
+.season-tag span,
+.hero-actions small,
+.corner-note,
+.leader div small,
+.era-copy small,
+.explore-grid small,
+footer > div:nth-of-type(2),
+footer > small,
+.explorer-tabs button span,
+.lineage-chain > div > span,
+.lineage-chain strong small,
+.career-selector button small,
+.career-line small,
+.career-order-note span,
+.career-order-note strong,
+.team-detail-main > small,
+.team-driver-pair > span,
+.team-facts span,
+.ratio-builder label span,
+.formula-readout span,
+.formula-readout small,
+.ranking-head,
+.driver-id small,
+.ranking-note,
+.ranking-filters label > span,
+.ranking-footer label > span,
+.inspector-top > span,
+.inspector-top > small,
+.champion-pair span,
+.year-major > span,
+.year-actions button > span,
+.year-help,
+.record-heading span,
+.record-heading strong,
+.rail-label,
+.year-category > div:first-child span {
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.eyebrow,
+.card-kicker,
+.race-meta,
+.grid-heading > div > span,
+.grid-heading > span,
+.archive-context span,
+.archive-context p,
+.era-copy b,
+.explore-grid button,
+.deep-heading > span,
+.machine-years button span,
+.machine-feature > small,
+.career-line span,
+.back-to-grid,
+.progress-heading span,
+.race-strip article > div:first-child,
+.race-card-footer,
+.calendar-link,
+.mode-switch button,
+.driver-id > b,
+.driver-era,
+.ranking-filters input,
+.ranking-filters select,
+.ranking-footer select,
+.record-state,
+.season-grid-list > article > span,
+.season-driver-list > article > span,
+.season-driver-list > article > b,
+.season-driver-list em,
+.year-category > div:first-child strong,
+.year-category-tabs button,
+.season-team-list > article > span,
+.season-team-list em,
+.season-team-list > b {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.search input,
+.next-race > p,
+.standings-list > div,
+.standings-list span,
+.standings-list em,
+.team-row div small,
+.archive-tabs button,
+.era-copy p,
+.explore-grid p,
+.machine-feature > p,
+.career-selector button > b,
+.career-selector button > span,
+.team-detail-main p,
+.team-facts strong,
+.year-major p,
+.season-grid-list strong,
+.season-driver-list strong,
+.season-team-list strong,
+.ranking-empty {
+  font-size: 13px;
+}
+
+.section-title p,
+.deep-note,
+.directory-intro > p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.season-grid-list small,
+.season-driver-list small,
+.season-team-list small {
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.team-driver-pair strong,
+.driver-id strong {
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .year-rail button span {
+    font-size: 13px;
+  }
+
+  .section-title p,
+  .deep-note,
+  .directory-intro > p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+import type { DriverStat } from "./driver-stats";
+
+export const supplementalDriverStats: Record<string, DriverStat> = {
+  HAM:{name:"Lewis Hamilton",code:"HAM",country:"GBR",era:"2007—",debut:2007,starts:392,wins:106,pointsFinishes:340,podiums:207,titles:7,poles:118},
+  VER:{name:"Max Verstappen",code:"VER",country:"NED",era:"2015—",debut:2015,starts:245,wins:71,pointsFinishes:203,podiums:131,titles:4,poles:64},
+  ALO:{name:"Fernando Alonso",code:"ALO",country:"ESP",era:"2001—",debut:2001,starts:440,wins:32,pointsFinishes:276,podiums:106,titles:2,poles:23},
+  TSU:{name:"Yuki Tsunoda",code:"TSU",country:"JPN",era:"2021—",debut:2021,starts:114,wins:0,pointsFinishes:33,podiums:0,titles:0,poles:1},
+  RUS:{name:"George Russell",code:"RUS",country:"GBR",era:"2019—",debut:2019,starts:164,wins:7,pointsFinishes:95,podiums:30,titles:0,poles:16},
+  ANT:{name:"Kimi Antonelli",code:"ANT",country:"ITA",era:"2025—",debut:2025,starts:36,wins:6,pointsFinishes:24,podiums:13,titles:0,poles:8},
+  LEC:{name:"Charles Leclerc",code:"LEC",country:"MON",era:"2018—",debut:2018,starts:184,wins:9,pointsFinishes:142,podiums:54,titles:0,poles:34},
+  NOR:{name:"Lando Norris",code:"NOR",country:"GBR",era:"2019—",debut:2019,starts:163,wins:13,pointsFinishes:130,podiums:48,titles:0,poles:32},
+  PIA:{name:"Oscar Piastri",code:"PIA",country:"AUS",era:"2023—",debut:2023,starts:80,wins:9,pointsFinishes:63,podiums:28,titles:0,poles:15},
+  HAD:{name:"Isack Hadjar",code:"HAD",country:"FRA",era:"2025—",debut:2025,starts:35,wins:0,pointsFinishes:18,podiums:1,titles:0,poles:3},
+  LAW:{name:"Liam Lawson",code:"LAW",country:"NZL",era:"2023—",debut:2023,starts:47,wins:0,pointsFinishes:19,podiums:0,titles:0,poles:0},
+  LIN:{name:"Arvid Lindblad",code:"LIN",country:"GBR",era:"2026—",debut:2026,starts:11,wins:0,pointsFinishes:7,podiums:0,titles:0,poles:0},
+  GAS:{name:"Pierre Gasly",code:"GAS",country:"FRA",era:"2017—",debut:2017,starts:189,wins:1,pointsFinishes:83,podiums:6,titles:0,poles:0},
+  COL:{name:"Franco Colapinto",code:"COL",country:"ARG",era:"2024—",debut:2024,starts:38,wins:0,pointsFinishes:8,podiums:0,titles:0,poles:0},
+  OCO:{name:"Esteban Ocon",code:"OCO",country:"FRA",era:"2016—",debut:2016,starts:192,wins:1,pointsFinishes:96,podiums:4,titles:0,poles:0},
+  BEA:{name:"Oliver Bearman",code:"BEA",country:"GBR",era:"2024—",debut:2024,starts:39,wins:0,pointsFinishes:14,podiums:0,titles:0,poles:0},
+  HUL:{name:"Nico Hülkenberg",code:"HUL",country:"GER",era:"2010—",debut:2010,starts:264,wins:0,pointsFinishes:119,podiums:1,titles:0,poles:1},
+  BOR:{name:"Gabriel Bortoleto",code:"BOR",country:"BRA",era:"2025—",debut:2025,starts:35,wins:0,pointsFinishes:8,podiums:0,titles:0,poles:0},
+  SAI:{name:"Carlos Sainz",code:"SAI",country:"ESP",era:"2015—",debut:2015,starts:242,wins:4,pointsFinishes:152,podiums:29,titles:0,poles:11},
+  ALB:{name:"Alexander Albon",code:"ALB",country:"THA",era:"2019—",debut:2019,starts:139,wins:0,pointsFinishes:52,podiums:2,titles:0,poles:1},
+  STR:{name:"Lance Stroll",code:"STR",country:"CAN",era:"2017—",debut:2017,starts:202,wins:0,pointsFinishes:66,podiums:3,titles:0,poles:1},
+  PER:{name:"Sergio Pérez",code:"PER",country:"MEX",era:"2011—",debut:2011,starts:295,wins:6,pointsFinishes:186,podiums:39,titles:0,poles:4},
+  BOT:{name:"Valtteri Bottas",code:"BOT",country:"FIN",era:"2013—",debut:2013,starts:259,wins:10,pointsFinishes:145,podiums:67,titles:0,poles:19},
+  RIC:{name:"Daniel Ricciardo",code:"RIC",country:"AUS",era:"2011—2024",debut:2011,starts:257,wins:8,pointsFinishes:135,podiums:32,titles:0,poles:4},
+};

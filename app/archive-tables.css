@@ -1,0 +1,192 @@
+#history .year-browser {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+}
+
+#history .year-inspector {
+  min-width: 0;
+}
+
+#history .year-category > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+#history .year-category-tabs {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  width: 100%;
+}
+
+#history .year-category-tabs button {
+  display: grid !important;
+  place-items: center;
+  width: auto !important;
+  min-width: 0;
+}
+
+#history .season-record {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  max-height: 360px !important;
+  overflow: auto !important;
+}
+
+#history .season-table {
+  display: block !important;
+  width: 100%;
+  min-width: 0;
+}
+
+#history .season-table-head,
+#history .season-table article {
+  display: grid !important;
+  width: 100%;
+  align-items: center !important;
+  margin: 0;
+}
+
+#history .season-table-head {
+  position: static;
+  z-index: 2;
+  min-height: 38px;
+  background: #111214;
+  border-bottom: 1px solid #55585d;
+  color: #777b81;
+  font: 700 10px var(--font-mono);
+  letter-spacing: .08em;
+}
+
+#history .record-heading {
+  position: static;
+  top: auto;
+}
+
+#history .year-category > div:first-child {
+  min-height: 18px;
+  margin-bottom: 12px;
+}
+
+#history .year-category-tabs button {
+  position: relative;
+  height: 46px;
+  background: transparent !important;
+  color: #8f9297 !important;
+  border-right: 1px solid #3b3d42;
+  font-size: 12px;
+  transition: background .16s ease, color .16s ease;
+}
+
+#history .year-category-tabs button:hover,
+#history .year-category-tabs button:focus-visible {
+  color: #ecece8 !important;
+  outline: none;
+}
+
+#history .year-category-tabs button.active,
+#history .year-category-tabs button[aria-selected="true"] {
+  background: var(--acid) !important;
+  color: #111214 !important;
+  box-shadow: inset 0 -4px 0 #111214;
+}
+
+#history .year-category-tabs button.active::before,
+#history .year-category-tabs button[aria-selected="true"]::before {
+  content: "表示中";
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font: 700 8px var(--font-mono);
+  letter-spacing: .05em;
+}
+
+#history .season-table article {
+  min-height: 66px !important;
+  padding: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid #303237;
+}
+
+#history .season-table .grid-table-columns,
+#history .season-grid-list article.grid-table-columns {
+  grid-template-columns: 54px minmax(150px, .75fr) minmax(280px, 1.25fr) !important;
+}
+
+#history .season-table .team-table-columns {
+  grid-template-columns: 54px minmax(300px, 1fr) 110px 90px !important;
+}
+
+#history .season-table .driver-table-columns {
+  grid-template-columns: 54px 68px minmax(280px, 1fr) 110px !important;
+}
+
+#history .season-table article > span {
+  color: #777b81;
+  font: 600 11px var(--font-mono);
+}
+
+#history .season-grid-list article strong,
+#history .season-team-list article strong,
+#history .season-driver-list .driver-name-link {
+  display: block !important;
+  min-width: 0;
+  font-size: 13px;
+  color: #ecece8;
+}
+
+#history .season-grid-list article small,
+#history .season-team-list article small,
+#history .season-driver-list article small {
+  display: block !important;
+  min-width: 0;
+  max-width: none;
+  margin: 4px 0 0;
+  color: #8f9297;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+#history .season-grid-list article small {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+#history .season-team-list article em,
+#history .season-driver-list article em {
+  justify-self: end;
+  padding-right: 12px;
+  color: var(--acid);
+  font: 700 14px var(--font-mono);
+}
+
+#history .season-team-list article > b {
+  justify-self: end;
+  padding-right: 12px;
+  color: #8f9297;
+  font: 600 11px var(--font-mono);
+}
+
+@media (max-width: 900px) {
+  #history .year-browser {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  #history .season-table {
+    min-width: 680px;
+  }
+
+  #history .year-category-tabs {
+    display: flex !important;
+    overflow-x: auto;
+  }
+
+  #history .year-category-tabs button {
+    min-width: 90px;
+  }
+}

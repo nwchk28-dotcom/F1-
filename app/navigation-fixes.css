@@ -1,0 +1,20 @@
+.driver-marker {
+  position: relative;
+  display: block;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  background: #101114;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 72% 100%, 0 100%);
+}
+
+.driver-marker::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d8ff38;
+}

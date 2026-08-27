@@ -1,0 +1,2 @@
+.career-selector button{position:relative}.career-selector button:nth-child(23){margin-left:18px}.career-selector button:nth-child(23):before{content:"LEGENDS";position:absolute;left:-14px;top:-19px;font:700 7px var(--font-mono);color:#77746d;letter-spacing:.12em}
+@media(max-width:900px){.career-order-note{align-items:flex-start}.career-order-note strong{max-width:170px;text-align:right;line-height:1.5}}

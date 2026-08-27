@@ -1,0 +1,270 @@
+.section-jump{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;background:#111214;border:1px solid #3c3e43;border-right:0;box-shadow:0 14px 40px #0003}.section-jump button{width:48px;height:54px;display:flex;align-items:center;border:0;border-bottom:1px solid #34363a;background:transparent;color:#898c91;padding:0;overflow:hidden;transition:width .2s ease,background .2s ease,color .2s ease}.section-jump button:last-child{border-bottom:0}.section-jump button span{display:grid;place-items:center;flex:0 0 48px;font:700 11px var(--font-mono)}.section-jump button b{white-space:nowrap;padding-right:16px;font-size:12px}.section-jump button:hover,.section-jump button:focus-visible{width:142px;background:var(--acid);color:#111;outline:none}@media(max-width:900px){.section-jump{top:auto;right:14px;bottom:78px;transform:none}.section-jump button{width:42px;height:42px}.section-jump button span{flex-basis:42px}.section-jump button:hover,.section-jump button:focus-visible{width:128px}}
+
+.hero-actions button {
+  color: #0c0d0f;
+}
+
+.section-jump:hover button,
+.section-jump:focus-within button {
+  width: 142px;
+}
+
+.section-jump button:hover,
+.section-jump button:focus-visible {
+  background: var(--acid);
+  color: #111;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .section-jump:hover button,
+  .section-jump:focus-within button {
+    width: 128px;
+  }
+}
+
+/* Explicit archive tables: one record per row with stable column alignment. */
+.season-table {
+  display: block !important;
+  width: 100%;
+}
+
+.season-table-head,
+.season-table article {
+  display: grid !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.grid-table-columns {
+  grid-template-columns: 52px minmax(150px, .7fr) minmax(260px, 1.3fr) !important;
+}
+
+.season-grid-list article.grid-table-columns {
+  grid-template-columns: 52px minmax(150px, .7fr) minmax(260px, 1.3fr) !important;
+}
+
+.team-table-columns {
+  grid-template-columns: 52px minmax(280px, 1fr) 105px 90px !important;
+}
+
+.driver-table-columns {
+  grid-template-columns: 52px 65px minmax(260px, 1fr) 105px !important;
+}
+
+.season-table-head {
+  position: sticky;
+  top: 51px;
+  z-index: 1;
+  min-height: 38px;
+  background: #111214;
+  border-bottom: 1px solid #505258;
+  color: #777a80;
+  font: 700 10px var(--font-mono);
+  letter-spacing: .09em;
+}
+
+.season-table article {
+  min-height: 66px !important;
+  padding: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid #303237;
+}
+
+.season-table article > span {
+  color: #777a80;
+  font: 600 11px var(--font-mono);
+}
+
+.season-grid-list article strong {
+  font-size: 13px;
+}
+
+.season-grid-list article small {
+  margin: 0;
+  color: #92959a;
+  font-size: 12px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  max-width: none;
+}
+
+.season-team-list article > div,
+.season-driver-list article > div {
+  min-width: 0;
+}
+
+.season-team-list article strong,
+.season-driver-list article .driver-name-link {
+  display: block;
+  font-size: 13px;
+}
+
+.season-team-list article small,
+.season-driver-list article small {
+  display: block;
+  margin-top: 4px;
+  color: #85888d;
+  font-size: 11px;
+}
+
+.season-team-list article em,
+.season-driver-list article em,
+.season-team-list article > b {
+  justify-self: end;
+  padding-right: 12px;
+}
+
+@media (max-width: 900px) {
+  .season-table {
+    min-width: 650px;
+  }
+
+  .season-record {
+    overflow: auto !important;
+  }
+}
+
+/* Restore the archive inspector's dedicated layout after global readability overrides. */
+.year-category > div:first-child {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px;
+}
+
+.year-category-tabs {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.year-category-tabs button {
+  display: block !important;
+  width: auto !important;
+}
+
+.season-record {
+  max-height: 330px !important;
+  overflow: auto !important;
+}
+
+.season-grid-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.season-grid-list article {
+  display: grid !important;
+  grid-template-columns: 35px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 10px;
+}
+
+.season-grid-list article strong,
+.season-grid-list article small {
+  display: block !important;
+  min-width: 0;
+}
+
+.data-as-of {
+  display: inline-block;
+  margin-top: 8px;
+  color: #bbc0c5;
+  font: 700 11px var(--font-mono);
+  letter-spacing: .04em;
+}
+
+@media (max-width: 900px) {
+  .season-grid-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .year-category-tabs {
+    display: flex !important;
+  }
+
+  .year-category-tabs button {
+    min-width: 82px;
+  }
+}
+
+.season-team-list article em,
+.season-driver-list article em {
+  color: var(--acid);
+  font: 700 14px var(--font-mono);
+}
+
+.season-team-list article > b {
+  color: #888b90;
+  font: 600 11px var(--font-mono);
+}
+
+.profile-career-summary > div:nth-child(4) b,
+.profile-career-summary > div:nth-child(5) b {
+  font-size: 13px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.unified-career-record {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.unified-career-record > div:nth-child(10) b,
+.unified-career-record > div:nth-child(11) b {
+  font-size: 12px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .unified-career-record {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.team-row div small {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  align-items: center !important;
+  column-gap: 8px !important;
+  row-gap: 5px !important;
+}
+
+.grid-driver-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.grid-driver-link i {
+  color: #9a9a94;
+  font: 500 13px var(--font-mono);
+}
+
+.section-jump {
+  width: 48px;
+  transition: width .2s ease;
+}
+
+.section-jump button {
+  width: 100% !important;
+}
+
+.section-jump:hover,
+.section-jump:focus-within {
+  width: 142px;
+}
+
+@media (max-width: 900px) {
+  .section-jump {
+    width: 42px;
+  }
+
+  .section-jump:hover,
+  .section-jump:focus-within {
+    width: 128px;
+  }
+}
